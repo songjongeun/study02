@@ -8,14 +8,10 @@ public class bj4_10871 {
         int[] arr = new int[n];
 
         for(int i =0; i < arr.length; i++){
-            arr[i] = sc.nextInt();
+            arr[i] = sc.nextInt(); // 배열에 숫자 입력후
             if(arr[i] < x){
-                System.out.printf("%d ", arr[i]);
+                System.out.printf("%d ", arr[i]);//x보가 작은 수 출력
             }
         }
-
-        // for(int i = 0; i < arr.length; i++){
-            
-        // }
     }
 }
