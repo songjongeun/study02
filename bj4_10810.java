@@ -34,20 +34,21 @@ public class bj4_10810 {
         // ==================================================================================
         //공넣기 bufferReder/ Write
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer tk;
+        StringTokenizer tk; //공백으로 구분하기 위해 설정
         tk = new StringTokenizer(br.readLine());
-        int n = Integer.parseInt(tk.nextToken());
-        int m = Integer.parseInt(br.readLine());
-        int i, j, k;
+        int n = Integer.parseInt(tk.nextToken()); // 바구니 갯수
+        int m = Integer.parseInt(tk.nextToken()); // 공을 넣었다 빼는 행위의 수
         int[] basket = new int[n];
-        for(int l = 0; l < basket.length; l++){
-            basket[l] = 0;
+        int i, j, k;
+        for(int l = 0; l < n; l++){
+            basket[l] = 0; // 배열을 0으로 초기화
         }
+        System.out.print("\n");
         for(int l = 0; l < m; l++){
             tk = new StringTokenizer(br.readLine());
             i = Integer.parseInt(tk.nextToken());
             j = Integer.parseInt(tk.nextToken());
-            k = Integer.parseInt(br.readLine());
+            k = Integer.parseInt(tk.nextToken());
             for(int o = i - 1; o <= j - 1; o++){
                 basket[o] = k;
             }
